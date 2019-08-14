@@ -1,7 +1,11 @@
+require 'pry'
+
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   data.each do |key, value|
+    #binding.pry
     value.each do |new_value, names|
+      binding.pry
       names.each do |name|
         
         if !pigeon_list[name]
